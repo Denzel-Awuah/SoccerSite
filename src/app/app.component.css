@@ -72,11 +72,12 @@ body {
 	display: flex;
     align-items: center;
     justify-content: center;
-	font-weight: 600;
+	font-weight: 700;
+	font-size: 24px;
 	
 }
 .match-tournament img {
-		width: 60px;
+		width: 85px;
         align-items: center;
         justify-content: center;
 	}
@@ -102,7 +103,7 @@ body {
 }
 
 .column {
-	padding: 12px;
+	padding: 1px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -128,6 +129,11 @@ body {
 	
 }
 
+p{
+	margin-bottom: 0px;;
+}
+
+
 
 img {
 		width: 30px;
@@ -139,6 +145,11 @@ img {
 	margin-top: 1px;
 	font-size: 10px;
 	font-weight: 400;
+	cursor: pointer;
+}
+
+.team-name:hover{
+	color: blue;
 }
 
 .match-details {
@@ -156,7 +167,6 @@ img {
 }
 
     
-
 
 .match-score {
 	margin-top: 12px;
@@ -195,7 +205,7 @@ img {
 .topscorerstable{
     width: 100%;
     height: 100%;
-    border: 3px groove blue;
+    border: 3px groove rgb(70, 5, 131);
     margin-bottom: 40px;
 }
 
@@ -207,4 +217,31 @@ td:nth-child(1) {
 .scorersHeader{
       background-color: rgb(70, 5, 131);
       color: white;
+  }
+
+
+.leagueTable{
+	  width: 100%;
+	  height: 100%;
+	  justify-content: center;
+	  align-items: center;
+	  text-align: center;
+	  border: 3px groove rgb(70, 5, 131);
+  }
+
+  .tableArea{
+	margin: 140px;
+  }
+
+  .leagueHeading{
+	  justify-content: center;
+	  text-align: center;
+  }
+
+  .scorers{
+	  cursor: pointer;
+  }
+  
+  .scorers:hover{
+	  color: blue;
   }
