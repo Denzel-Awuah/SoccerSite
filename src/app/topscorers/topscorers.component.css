@@ -1,0 +1,35 @@
+
+.headings{
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+.topscorerstable{
+    width: 100%;
+    height: 100%;
+    border: 3px groove rgb(70, 5, 131);
+    margin-bottom: 40px;
+}
+
+.scorersHeader{
+    background-color: rgb(70, 5, 131);
+    color: white;
+}
+
+.scorers{
+    cursor: pointer;
+}
+
+.scorers:hover{
+    color: blue;
+    font-weight: 501;
+}
+
+td:nth-child(1) {
+    padding-left: 10px;
+  }
+
+  .tableArea{
+	margin: 140px;
+  }

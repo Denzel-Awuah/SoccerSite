@@ -1,16 +1,17 @@
 <div class="container-fluid">
 	
 	   <!--Logo -->
-		<div class="match-header">
+		<div class="match-header animate__animated animate__bounceInDown">
       <div class="match-tournament">
           <img class="premlogo" src="https://assets.codepen.io/285131/pl-logo.svg" />
            English Premier League
       </div>
     </div>
 
-    <!--Previous Fixtures Sectiion-->
+    
     <div class="row">
-      <div class="col-md-3">
+      <!--Previous Fixtures Sectiion-->
+      <div class="col-md-3 animate__animated animate__fadeInLeft">
         <h3 class="headings">Previous Fixtures</h3>
             <div class="match-content">
               <div class="column">
@@ -18,7 +19,7 @@
                   <div class="team-logo">
                     <img src="https://assets.codepen.io/285131/whufc.svg" />
                   </div>
-                  <h2 (click)="getScorers()" class="team-name">West Ham</h2>
+                  <h2 class="team-name">West Ham</h2>
                 </div>
               </div>
               <div class="column">
@@ -42,7 +43,7 @@
                   <div class="team-logo">
                     <img src="https://assets.codepen.io/285131/chelsea.svg" />
                   </div>
-                  <h2 (click)="getScorers()" class="team-name">Chelsea</h2>
+                  <h2 class="team-name">Chelsea</h2>
                 </div>
               </div>
             </div>
@@ -53,7 +54,7 @@
                   <div class="team-logo">
                     <img src="https://assets.codepen.io/285131/whufc.svg" />
                   </div>
-                  <h2 (click)="getScorers()" class="team-name">West Ham</h2>
+                  <h2 class="team-name">West Ham</h2>
                 </div>
               </div>
               <div class="column">
@@ -77,74 +78,16 @@
                   <div class="team-logo">
                     <img src="https://assets.codepen.io/285131/chelsea.svg" />
                   </div>
-                  <h2 (click)="getScorers()" class="team-name">Chelsea</h2>
+                  <h2 class="team-name">Chelsea</h2>
                 </div>
               </div>
             </div>
       </div>
          <!--Top Scorers Section-->
-         <div class="col-md-6 ">
-          <h3 class="headings">Top Scorers</h3>
-          <table class="topscorerstable">
-            <tr class="scorersHeader">
-              <th>Rank</th>
-              <th>Player</th>
-              <th>Goals</th>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td class="scorers">Maria Anders</td>
-              <td>17</td>
-            </tr>
-            <tr>
-              <td>2</td>
-              <td class="scorers">Francisco Chang</td>
-              <td>11</td>
-            </tr>
-            <tr>
-              <td>3</td>
-              <td class="scorers">Roland Mendel</td>
-              <td>7</td>
-            </tr>
-            <tr>
-              <td>4</td>
-              <td class="scorers">Helen Bennett</td>
-              <td>6</td>
-            </tr>
-            <tr>
-              <td>5</td>
-              <td class="scorers">Yoshi Tannamuri</td>
-              <td>4</td>
-            </tr>
-            <tr>
-              <td>6</td>
-              <td class="scorers">Giovanni Rovelli</td>
-              <td>1</td>
-            </tr>
-            <tr>
-              <td>7</td>
-              <td class="scorers">Giovanni Rovelli</td>
-              <td>1</td>
-            </tr>
-            <tr>
-              <td>8</td>
-              <td class="scorers">Giovanni Rovelli</td>
-              <td>1</td>
-            </tr>
-            <tr>
-              <td>9</td>
-              <td class="scorers">Giovanni Rovelli</td>
-              <td>1</td>
-            </tr>
-            <tr>
-              <td>10</td>
-              <td class="scorers">Giovanni Rovelli</td>
-              <td>1</td>
-            </tr>
-          </table>
-         </div>
+         <app-topscorers class="col-md-6" [scorersdata]="scorersdata"></app-topscorers>
+
          <!--Upcoming Fixtures Section-->
-         <div class="col-md-3">
+         <div class="col-md-3 animate__animated animate__fadeInRight">
           <h3 class="headings">Upcoming Fixtures</h3>
               <div class="match-content">
                 <div class="column">
@@ -220,8 +163,9 @@
     </div>
 
 
+    <!--Premier League Table -->
     <div class="row justify-content-center">
-        <div class="col-md-8 tableArea">
+        <div class="col-md-8 tableArea animate__animated animate__fadeInUp">
           <h3 class="leagueHeading">League Table</h3>
                   <table class="leagueTable">
                     <tr class="scorersHeader">

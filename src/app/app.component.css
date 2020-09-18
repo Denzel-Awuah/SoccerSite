@@ -202,23 +202,16 @@ img {
 }
 
 
-.topscorerstable{
-    width: 100%;
-    height: 100%;
-    border: 3px groove rgb(70, 5, 131);
-    margin-bottom: 40px;
-}
-
 td:nth-child(1) {
     padding-left: 10px;
   }
 
 
-.scorersHeader{
-      background-color: rgb(70, 5, 131);
-      color: white;
-  }
 
+  .scorersHeader{
+    background-color: rgb(70, 5, 131);
+    color: white;
+}
 
 .leagueTable{
 	  width: 100%;
@@ -238,10 +231,8 @@ td:nth-child(1) {
 	  text-align: center;
   }
 
-  .scorers{
-	  cursor: pointer;
+  .appScorers{
+	  width: 100%;
+	  height: 100%;
   }
-  
-  .scorers:hover{
-	  color: blue;
-  }
+
