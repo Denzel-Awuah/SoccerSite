@@ -144,12 +144,13 @@ img {
 	text-align: center;
 	margin-top: 1px;
 	font-size: 10px;
-	font-weight: 400;
+	font-weight: 480;
 	cursor: pointer;
 }
 
 .team-name:hover{
 	color: blue;
+	font-weight: 800;
 }
 
 .match-details {
