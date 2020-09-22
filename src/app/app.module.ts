@@ -6,12 +6,14 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { TopscorersComponent } from './topscorers/topscorers.component';
 import { PreviousFixturesComponent } from './previous-fixtures/previous-fixtures.component';
+import { UpcomingFixturesComponent } from './upcoming-fixtures/upcoming-fixtures.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TopscorersComponent,
-    PreviousFixturesComponent
+    PreviousFixturesComponent,
+    UpcomingFixturesComponent
   ],
   imports: [
     BrowserModule, FormsModule, HttpClientModule

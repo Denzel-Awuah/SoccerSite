@@ -1,68 +1,38 @@
 <div class="animate__animated animate__fadeInLeft">
     <h3 class="headings">Previous Fixtures</h3>
-        <div class="match-content">
-          <div class="column">
-            <div class="team team--home">
-              <div class="team-logo">
-                <img src="https://assets.codepen.io/285131/whufc.svg" />
-              </div>
-              <h2 class="team-name">West Ham</h2>
-            </div>
+    <div *ngFor="let matchGame of PreviousFixtures;" class="match-content">
+      <div class="column">
+        <div class="team team--home">
+          <div class="team-logo">
+            <img src={{matchGame.homeTeam.logo}} />
           </div>
-          <div class="column">
-            <div class="match-details">
-           
-              <div class="match-score">
-                <span class="match-score-number match-score-number--leading">2</span>
-                <span class="match-score-divider">:</span>
-                <span class="match-score-number">0</span>
-              </div>
-        
-              <div class="match-referee justify-content-center">
-                Referee: <strong>Joseph Hicks</strong>
-              </div>		
-            </div>
-          </div>
-          <div class="column">
-            <div class="team team--away">
-              <div class="team-logo">
-                <img src="https://assets.codepen.io/285131/chelsea.svg" />
-              </div>
-              <h2 class="team-name">Chelsea</h2>
-            </div>
-          </div>
+          <h2 class="team-name">{{matchGame.homeTeam.team_name}}</h2>
         </div>
-        <!--END-->
-        <div class="match-content">
-          <div class="column">
-            <div class="team team--home">
-              <div class="team-logo">
-                <img src="https://assets.codepen.io/285131/whufc.svg" />
-              </div>
-              <h2 class="team-name">West Ham</h2>
-            </div>
+      </div>
+      <div class="column">
+        <div class="match-details">
+          <div class="match-date justify-content-center">
+          <p>{{matchGame.event_date}}</p>
           </div>
-          <div class="column">
-            <div class="match-details">
-  
-              <div class="match-score">
-                <span class="match-score-number">2</span>
-                <span class="match-score-divider">:</span>
-                <span class="match-score-number">0</span>
-              </div>
-        
-              <div class="match-referee justify-content-center">
-                Referee: <strong>Joseph Hicks</strong>
-              </div>		
-            </div>
+          <div class="match-score">
+            <span class="match-score-number match-score-number--leading">{{matchGame.goalsHomeTeam}}</span>
+            <span class="match-score-divider">:</span>
+            <span class="match-score-number">{{matchGame.goalsAwayTeam}}</span>
           </div>
-          <div class="column">
-            <div class="team team--away">
-              <div class="team-logo">
-                <img src="https://assets.codepen.io/285131/chelsea.svg" />
-              </div>
-              <h2 class="team-name">Chelsea</h2>
-            </div>
-          </div>
+    
+          <div class="match-referee justify-content-center">
+            Referee: <strong>{{matchGame.referee}}</strong>
+          </div>		
         </div>
+      </div>
+      <div class="column">
+        <div class="team team--away">
+          <div class="team-logo">
+            <img src={{matchGame.awayTeam.logo}} />
+          </div>
+          <h2 class="team-name">{{matchGame.awayTeam.team_name}}</h2>
+        </div>
+      </div>
+    </div>
+
 </div>

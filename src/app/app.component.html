@@ -1,3 +1,4 @@
+<!-- Home Page -->
 <div class="container-fluid">
 	
 	   <!--Logo -->
@@ -10,84 +11,15 @@
 
     <!--Contains Previous Fixtures, Top Scorers and Upcoming Fixtures-->
     <div class="row">
-      <!--Previous Fixtures Sectiion-->
-      <app-previous-fixtures class="col-md-3"></app-previous-fixtures>
+
+        <!--Previous Fixtures Sectiion-->
+        <app-previous-fixtures class="col-md-3"></app-previous-fixtures>
+
          <!--Top Scorers Section-->
          <app-topscorers class="col-md-6"></app-topscorers>
 
          <!--Upcoming Fixtures Section-->
-         <div class="col-md-3 animate__animated animate__fadeInRight">
-          <h3 class="headings">Upcoming Fixtures</h3>
-              <div class="match-content">
-                <div class="column">
-                  <div class="team team--home">
-                    <div class="team-logo">
-                      <img src="https://assets.codepen.io/285131/whufc.svg" />
-                    </div>
-                    <h2 class="team-name">West Ham</h2>
-                  </div>
-                </div>
-                <div class="column">
-                  <div class="match-details">
-                    <div class="match-date justify-content-center">
-                    <p>12 Aug at (time)</p>
-                    </div>
-                    <div class="match-score">
-                      <span class="match-score-number match-score-number--leading">2</span>
-                      <span class="match-score-divider">:</span>
-                      <span class="match-score-number">0</span>
-                    </div>
-              
-                    <div class="match-referee justify-content-center">
-                      Referee: <strong>Joseph Hicks</strong>
-                    </div>		
-                  </div>
-                </div>
-                <div class="column">
-                  <div class="team team--away">
-                    <div class="team-logo">
-                      <img src="https://assets.codepen.io/285131/chelsea.svg" />
-                    </div>
-                    <h2 class="team-name">Chelsea</h2>
-                  </div>
-                </div>
-              </div>
-              <!--END-->
-              <div class="match-content">
-                <div class="column">
-                  <div class="team team--home">
-                    <div class="team-logo">
-                      <img src="https://assets.codepen.io/285131/whufc.svg" />
-                    </div>
-                    <h2 class="team-name">West Ham</h2>
-                  </div>
-                </div>
-                <div class="column">
-                  <div class="match-details">
-                    <div class="match-date justify-content-center">
-                    <p>12 Aug at (time)</p>
-                    </div>
-                    <div class="match-score">
-                      <span class="match-score-number">2</span>
-                      <span class="match-score-divider">:</span>
-                      <span class="match-score-number">0</span>
-                    </div>
-              
-                    <div class="match-referee justify-content-center">
-                      Referee: <strong>Joseph Hicks</strong>
-                    </div>		
-                  </div>
-                </div>
-                <div class="column">
-                  <div class="team team--away">
-                    <div class="team-logo">
-                      <img src="https://assets.codepen.io/285131/chelsea.svg" />
-                    </div>
-                    <h2 class="team-name">Chelsea</h2>
-                  </div>
-                </div>
-              </div>
-        </div>
+         <app-upcoming-fixtures class="col-md-3"></app-upcoming-fixtures>
 
     </div>
 

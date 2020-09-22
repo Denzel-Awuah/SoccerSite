@@ -9,10 +9,9 @@ import { HttpClient } from '@angular/common/http';
 })
 export class TopscorersComponent implements OnInit {
 
- 
-
+  //Contains Top Scorers Data from API
   scorersdata: Object;
-  apiSub = "api";
+ 
 
   constructor(private http: HttpClient) { 
 
