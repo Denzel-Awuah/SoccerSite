@@ -2,156 +2,33 @@
 <div class="container-fluid">
 	
 	   <!--Logo -->
-		<div class="match-header animate__animated animate__bounceInDown">
-      <div class="match-tournament">
+		<div  class="match-header ">
+      <div routerLink="/" routerLinkActive="active" class="match-tournament">
           <img class="premlogo" src="https://assets.codepen.io/285131/pl-logo.svg" />
            English Premier League
       </div>
     </div>
-
+    
     <!--Contains Previous Fixtures, Top Scorers and Upcoming Fixtures-->
-    <div class="row">
+    <!-- <div class="row">
 
-        <!--Previous Fixtures Sectiion-->
+       
         <app-previous-fixtures class="col-md-3"></app-previous-fixtures>
 
-         <!--Top Scorers Section-->
+         
          <app-topscorers class="col-md-6"></app-topscorers>
 
-         <!--Upcoming Fixtures Section-->
+        
          <app-upcoming-fixtures class="col-md-3"></app-upcoming-fixtures>
 
-    </div>
+    </div> -->
 
 
     <!--Premier League Table -->
-    <div class="row justify-content-center">
-        <div class="col-md-8 animate__animated animate__fadeInUp">
-          <h3 class="leagueHeading">League Table</h3>
-                  <table class="leagueTable">
-                    <tr class="scorersHeader">
-                      <th>#</th>
-                      <th>Team</th>
-                      <th>GP</th> 
-                      <th>W</th>
-                      <th>D</th>
-                      <th>L</th>
-                      <th>GD</th>
-                      <th>PTS</th>
-                    </tr>
-                    <tr class="wpos">
-                      <td>1</td>
-                      <td>Warriors FC</td>
-                      <td>2</td>  <!--games played-->
-                      <td>2</td>  <!--wins-->
-                      <td>0</td>  <!--draws-->
-                      <td>0</td>  <!--losses-->
-                      <td>5</td>  <!--goal difference-->
-                      <td>6</td>  <!--points-->
-                    </tr>
-                    <tr class="wpos">
-                      <td>2</td>
-                      <td>YOLO FC</td>
-                      <td>2</td>  <!--games played-->
-                      <td>2</td>  <!--wins-->
-                      <td>0</td>  <!--draws-->
-                      <td>0</td>  <!--losses-->
-                      <td>5</td>  <!--goal difference-->
-                      <td>6</td>  <!--points-->
-                    </tr>
-                    <tr class="wpos">
-                      <td>3</td>
-                      <td>Majestic A</td>
-                      <td>2</td>  <!--games played-->
-                      <td>2</td>  <!--wins-->
-                      <td>0</td>  <!--draws-->
-                      <td>0</td>  <!--losses-->
-                      <td>5</td>  <!--goal difference-->
-                      <td>6</td>  <!--points-->
-                    </tr>
-                    <tr class="wpos">
-                      <td>4</td>
-                      <td>Fenris</td>
-                      <td>2</td>  <!--games played-->
-                      <td>2</td>  <!--wins-->
-                      <td>0</td>  <!--draws-->
-                      <td>0</td>  <!--losses-->
-                      <td>5</td>  <!--goal difference-->
-                      <td>6</td>  <!--points-->
-                    </tr>
-                    <tr class="pos">
-                      <td>5</td>
-                      <td>La Masia</td>
-                      <td>2</td>  <!--games played-->
-                      <td>2</td>  <!--wins-->
-                      <td>0</td>  <!--draws-->
-                      <td>0</td>  <!--losses-->
-                      <td>5</td>  <!--goal difference-->
-                      <td>6</td>  <!--points-->
-                    </tr>
-                    <tr class="pos">
-                      <td>6</td>
-                      <td>Ultra Sort FC</td>
-                      <td>3</td>  <!--games played-->
-                      <td>1</td>
-                      <td>0</td>
-                      <td>2</td>
-                      <td>-1</td>
-                      <td>3</td>
-                    </tr>
-                    <tr class="pos">
-                      <td>7</td>
-                      <td>Wasseypur FC</td>
-                      <td>2</td>
-                      <td>1</td>
-                      <td>0</td>
-                      <td>1</td>
-                      <td>-2</td>
-                      <td>3</td>
-                    </tr>
-                    <tr class="pos">
-                      <td>8</td>
-                      <td>Majestic B</td>
-                      <td>1</td>
-                      <td>0</td>
-                      <td>1</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>1</td>
-                    </tr>
-                    <tr class="pos">
-                      <td>9</td>
-                      <td>Not So Hot Spurs</td>
-                      <td>2</td>
-                      <td>0</td>
-                      <td>1</td>
-                      <td>1</td>
-                      <td>-1</td>
-                      <td>1</td>
-                    </tr>
-                    <tr class="pos">
-                      <td>10</td>
-                      <td>Silver Hawks</td>
-                      <td>2</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>2</td>
-                      <td>-4</td>
-                      <td>0</td>
-                    </tr>
-                    <tr class="pos">
-                      <td>11</td>
-                      <td>Barely Legal FC</td>
-                      <td>2</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>2</td>
-                      <td>-5</td>
-                      <td>0</td>
-                    </tr>
-                  </table>
-        </div>
-  </div>
-
+    
+   <!-- <app-league-table class="row justify-content-center"></app-league-table> -->
+   <router-outlet></router-outlet>
+   
+   
 
 </div>

@@ -1,0 +1,27 @@
+    <div class="col-md-8 animate__animated animate__fadeInLeft">
+      <h3 class="leagueHeading">League Table</h3>
+              <table class="leagueTable">
+                <tr class="scorersHeader">
+                  <th>#</th>
+                  <th>Team</th>
+                  <th>GP</th> 
+                  <th>W</th>
+                  <th>D</th>
+                  <th>L</th>
+                  <th>GD</th>
+                  <th>PTS</th>
+                </tr>
+                <tr *ngFor="let team of leagueData;let i = index">
+                  <td>{{i+1}}</td>
+                  <td class="teamName">{{team.teamName}}</td>
+                  <td>{{team.all.matchsPlayed}}</td>  <!--games played-->
+                  <td>{{team.all.win}}</td>  <!--wins-->
+                  <td>{{team.all.draw}}</td>  <!--draws-->
+                  <td>{{team.all.lose}}</td>  <!--losses-->
+                  <td>{{team.goalsDiff}}</td>  <!--goal difference-->
+                  <td>{{team.points}}</td>  <!--points-->
+                </tr>
+                
+              </table>
+    </div>
+

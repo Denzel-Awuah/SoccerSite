@@ -19,7 +19,7 @@ export class TopscorersComponent implements OnInit {
 
   ngOnInit(): void {
       
-    // //Headers for API get request
+    // //Headers for API get request (HTTP Version)
     //   const headers = {
     //         "x-rapidapi-host": "api-football-v1.p.rapidapi.com",
     //         "x-rapidapi-key": "01217d9c47msha27496e5b78af28p1bca54jsnb9d860de87bc",
@@ -34,13 +34,15 @@ export class TopscorersComponent implements OnInit {
 
 
 
-  fetch("https://api-football-v1.p.rapidapi.com/v2/topscorers/524", {
-	"method": "GET",
-	"headers": {
-		"x-rapidapi-host": "api-football-v1.p.rapidapi.com",
-		"x-rapidapi-key": "01217d9c47msha27496e5b78af28p1bca54jsnb9d860de87bc"
-	}
-})
+    //USE THIS
+//   fetch("https://api-football-v1.p.rapidapi.com/v2/topscorers/524", {
+// 	"method": "GET",
+// 	"headers": {
+// 		"x-rapidapi-host": "api-football-v1.p.rapidapi.com",
+// 		"x-rapidapi-key": "01217d9c47msha27496e5b78af28p1bca54jsnb9d860de87bc"
+// 	}
+// })
+fetch("./../../assets/topscorers.json")
 .then(response => response.json())
 .then(data => {
   this.scorersdata = data.api.topscorers;

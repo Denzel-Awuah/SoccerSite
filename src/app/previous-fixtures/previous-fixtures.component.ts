@@ -15,13 +15,15 @@ export class PreviousFixturesComponent implements OnInit {
   ngOnInit(): void {
 
     //Get the Previous Fixtures from API
-    fetch("https://api-football-v1.p.rapidapi.com/v2/fixtures/league/524/last/5", {
-      "method": "GET",
-      "headers": {
-        "x-rapidapi-host": "api-football-v1.p.rapidapi.com",
-        "x-rapidapi-key": "01217d9c47msha27496e5b78af28p1bca54jsnb9d860de87bc"
-      }
-    })
+    // fetch("https://api-football-v1.p.rapidapi.com/v2/fixtures/league/524/last/5", {
+    //   "method": "GET",
+    //   "headers": {
+    //     "x-rapidapi-host": "api-football-v1.p.rapidapi.com",
+    //     "x-rapidapi-key": "01217d9c47msha27496e5b78af28p1bca54jsnb9d860de87bc"
+    //   }
+    // })
+    
+    fetch("./../../assets/datafixtures.json")
     .then(response => response.json())
     .then(data => {
       this.PreviousFixtures = data.api.fixtures;

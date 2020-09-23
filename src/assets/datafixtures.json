@@ -1,0 +1,196 @@
+{
+    "api":{
+    "fixtures":[
+    {
+    "fixture_id":157237,
+    "league_id":524,
+    "league":{
+    "name":"Premier League",
+    "country":"England",
+    "logo":"https://media.api-football.com/leagues/2.png",
+    "flag":"https://media.api-football.com/flags/gb.svg"
+    },
+    "event_date":"2020-01-19T14:00:00+00:00",
+    "event_timestamp":1579442400,
+    "firstHalfStart":1579442400,
+    "secondHalfStart":1579446000,
+    "round":"Regular Season - 23",
+    "status":"Second Half",
+    "statusShort":"2H",
+    "elapsed":65,
+    "venue":"Turf Moor",
+    "referee":"Anthony Taylor, England",
+    "homeTeam":{
+    "team_id":44,
+    "team_name":"Burnley",
+    "logo":"https://media.api-football.com/teams/44.png"
+    },
+    "awayTeam":{
+    "team_id":46,
+    "team_name":"Leicester",
+    "logo":"https://media.api-football.com/teams/46.png"
+    },
+    "goalsHomeTeam":1,
+    "goalsAwayTeam":1,
+    "score":{
+    "halftime":"0-1",
+    "fulltime":"",
+    "extratime":"",
+    "penalty":""
+    }
+    }
+    ,{
+    "fixture_id":157240,
+    "league_id":524,
+    "league":{
+    "name":"Premier League",
+    "country":"England",
+    "logo":"https://media.api-football.com/leagues/2.png",
+    "flag":"https://media.api-football.com/flags/gb.svg"
+    },
+    "event_date":"2020-01-18T17:30:00+00:00",
+    "event_timestamp":1579368600,
+    "firstHalfStart":1579368600,
+    "secondHalfStart":1579372200,
+    "round":"Regular Season - 23",
+    "status":"Match Finished",
+    "statusShort":"FT",
+    "elapsed":90,
+    "venue":"St. James' Park",
+    "referee":"Chris Kavanagh, England",
+    "homeTeam":{
+    "team_id":34,
+    "team_name":"Newcastle",
+    "logo":"https://media.api-football.com/teams/34.png"
+    },
+    "awayTeam":{
+    "team_id":49,
+    "team_name":"Chelsea",
+    "logo":"https://media.api-football.com/teams/49.png"
+    },
+    "goalsHomeTeam":1,
+    "goalsAwayTeam":0,
+    "score":{
+    "halftime":"0-0",
+    "fulltime":"1-0",
+    "extratime":"",
+    "penalty":""
+    }
+    }
+    ,{
+    "fixture_id":157235,
+    "league_id":524,
+    "league":{
+    "name":"Premier League",
+    "country":"England",
+    "logo":"https://media.api-football.com/leagues/2.png",
+    "flag":"https://media.api-football.com/flags/gb.svg"
+    },
+    "event_date":"2020-01-18T15:00:00+00:00",
+    "event_timestamp":1579359600,
+    "firstHalfStart":1579359600,
+    "secondHalfStart":1579363200,
+    "round":"Regular Season - 23",
+    "status":"Match Finished",
+    "statusShort":"FT",
+    "elapsed":90,
+    "venue":"Emirates Stadium",
+    "referee":"Mike Dean, England",
+    "homeTeam":{
+    "team_id":42,
+    "team_name":"Arsenal",
+    "logo":"https://media.api-football.com/teams/42.png"
+    },
+    "awayTeam":{
+    "team_id":62,
+    "team_name":"Sheffield Utd",
+    "logo":"https://media.api-football.com/teams/62.png"
+    },
+    "goalsHomeTeam":1,
+    "goalsAwayTeam":1,
+    "score":{
+    "halftime":"1-0",
+    "fulltime":"1-1",
+    "extratime":"",
+    "penalty":""
+    }
+    }
+    ,{
+    "fixture_id":157236,
+    "league_id":524,
+    "league":{
+    "name":"Premier League",
+    "country":"England",
+    "logo":"https://media.api-football.com/leagues/2.png",
+    "flag":"https://media.api-football.com/flags/gb.svg"
+    },
+    "event_date":"2020-01-18T15:00:00+00:00",
+    "event_timestamp":1579359600,
+    "firstHalfStart":1579359600,
+    "secondHalfStart":1579363200,
+    "round":"Regular Season - 23",
+    "status":"Match Finished",
+    "statusShort":"FT",
+    "elapsed":90,
+    "venue":"The American Express Community Stadium",
+    "referee":"Andy Madley, England",
+    "homeTeam":{
+    "team_id":51,
+    "team_name":"Brighton",
+    "logo":"https://media.api-football.com/teams/51.png"
+    },
+    "awayTeam":{
+    "team_id":66,
+    "team_name":"Aston Villa",
+    "logo":"https://media.api-football.com/teams/66.png"
+    },
+    "goalsHomeTeam":1,
+    "goalsAwayTeam":1,
+    "score":{
+    "halftime":"1-0",
+    "fulltime":"1-1",
+    "extratime":"",
+    "penalty":""
+    }
+    }
+    ,{
+    "fixture_id":157239,
+    "league_id":524,
+    "league":{
+    "name":"Premier League",
+    "country":"England",
+    "logo":"https://media.api-football.com/leagues/2.png",
+    "flag":"https://media.api-football.com/flags/gb.svg"
+    },
+    "event_date":"2020-01-18T15:00:00+00:00",
+    "event_timestamp":1579359600,
+    "firstHalfStart":1579359600,
+    "secondHalfStart":1579363200,
+    "round":"Regular Season - 23",
+    "status":"Match Finished",
+    "statusShort":"FT",
+    "elapsed":90,
+    "venue":"Etihad Stadium",
+    "referee":"Graham Scott, England",
+    "homeTeam":{
+    "team_id":50,
+    "team_name":"Manchester City",
+    "logo":"https://media.api-football.com/teams/50.png"
+    },
+    "awayTeam":{
+    "team_id":52,
+    "team_name":"Crystal Palace",
+    "logo":"https://media.api-football.com/teams/52.png"
+    },
+    "goalsHomeTeam":2,
+    "goalsAwayTeam":2,
+    "score":{
+    "halftime":"0-1",
+    "fulltime":"2-2",
+    "extratime":"",
+    "penalty":""
+    }
+    }
+]
+    }
+}

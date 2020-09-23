@@ -1,4 +1,4 @@
-<div class="animate__animated animate__fadeInDown">
+<div class="animate__animated animate__fadeInLeft">
     <h3 class="headings">Top Scorers</h3>
     <table class="topscorerstable">
       <tr class="scorersHeader">
@@ -6,11 +6,12 @@
         <th>Player</th>
         <th>Goals</th>
       </tr>
-      <tr *ngFor="let player of scorersdata;let i = index">
+      <tr  *ngFor="let player of scorersdata;let i = index">
         <td>{{i+1}}</td>
-        <td class="scorers">{{player.firstname}}&nbsp;{{player.lastname}}</td>
+        <td class="scorers"> <a routerLink="/leaguetable" routerLinkActive="active">{{player.firstname}}&nbsp;{{player.lastname}}</a></td>
         <td>{{player.goals.total}}</td>
       </tr>
      
     </table>
+    
    </div> 

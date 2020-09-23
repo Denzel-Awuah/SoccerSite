@@ -1,5 +1,6 @@
 import { COMPILER_OPTIONS, Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -12,11 +13,9 @@ export class AppComponent implements OnInit {
 
       scorersdata: Object;
 
-  constructor(private http: HttpClient){
-
-    
-
-    }
+      getAnimationData(outlet: RouterOutlet) {
+        return outlet && outlet.activatedRouteData && outlet.activatedRouteData.animation;
+      }
 
     ngOnInit():void{
     
