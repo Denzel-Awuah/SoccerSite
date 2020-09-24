@@ -1,0 +1,31 @@
+
+.headings{
+    margin-top: 3em;
+    text-align: center;
+}
+
+
+.teamstable{
+    width: 50%;
+    height: 100%;
+    border: 3px groove rgb(70, 5, 131);
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.teamsHeader{
+    background-color: rgb(70, 5, 131);
+    color: white;
+}
+
+img {
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+}
+
+a{
+    font-size: 23px;
+}

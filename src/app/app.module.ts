@@ -11,6 +11,8 @@ import { TopscorersComponent } from './topscorers/topscorers.component';
 import { PreviousFixturesComponent } from './previous-fixtures/previous-fixtures.component';
 import { UpcomingFixturesComponent } from './upcoming-fixtures/upcoming-fixtures.component';
 import { LeagueTableComponent } from './league-table/league-table.component';
+import { TeamsComponent } from './teams/teams.component';
+import { HomePageComponent } from './home-page/home-page.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { LeagueTableComponent } from './league-table/league-table.component';
     TopscorersComponent,
     PreviousFixturesComponent,
     UpcomingFixturesComponent,
-    LeagueTableComponent
+    LeagueTableComponent,
+    TeamsComponent,
+    HomePageComponent
   ],
   imports: [
     BrowserModule, FormsModule, HttpClientModule, appRoutingModule

@@ -6,13 +6,17 @@ import { TopscorersComponent } from './topscorers/topscorers.component';
 import { PreviousFixturesComponent } from './previous-fixtures/previous-fixtures.component';
 import { UpcomingFixturesComponent } from './upcoming-fixtures/upcoming-fixtures.component';
 import { LeagueTableComponent } from './league-table/league-table.component';
+import { TeamsComponent } from './teams/teams.component';
+import { HomePageComponent } from './home-page/home-page.component';
 
 const routes: Routes = [
     
     { path: 'topscorer', component: TopscorersComponent },
     { path: 'leaguetable', component: LeagueTableComponent },
     { path: 'matches', component: PreviousFixturesComponent},
-    { path: '', component: AppComponent },
+    { path: 'upcominggames', component: UpcomingFixturesComponent},
+    { path: 'teams', component: TeamsComponent},
+    { path: '', component: HomePageComponent },
 
     // otherwise redirect to home
     { path: '**', redirectTo: '' }

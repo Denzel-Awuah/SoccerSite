@@ -1,0 +1,14 @@
+<div class="animate__animated animate__fadeInRight">
+    <h3 class="headings">List of Premier League Teams</h3>
+    <table class="teamstable">
+      <tr class="teamsHeader">
+        <th>Rank</th>
+        <th>Goals</th>
+      </tr>
+      <tr  *ngFor="let team of teamsData">
+        <td> <img src={{team.logo}}></td>
+        <td><a routerLink="/leaguetable" routerLinkActive="active">{{team.name}}</a></td>
+      </tr>
+     
+    </table>
+</div> 
