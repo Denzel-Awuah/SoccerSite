@@ -8,6 +8,8 @@ import { UpcomingFixturesComponent } from './upcoming-fixtures/upcoming-fixtures
 import { LeagueTableComponent } from './league-table/league-table.component';
 import { TeamsComponent } from './teams/teams.component';
 import { HomePageComponent } from './home-page/home-page.component';
+import { ProfilePageComponent } from './profile-page/profile-page.component';
+
 
 const routes: Routes = [
     
@@ -16,6 +18,7 @@ const routes: Routes = [
     { path: 'matches', component: PreviousFixturesComponent},
     { path: 'upcominggames', component: UpcomingFixturesComponent},
     { path: 'teams', component: TeamsComponent},
+    { path: 'profile', component: ProfilePageComponent},
     { path: '', component: HomePageComponent },
 
     // otherwise redirect to home

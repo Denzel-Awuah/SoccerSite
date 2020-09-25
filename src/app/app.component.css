@@ -253,9 +253,8 @@ td:nth-child(1) {
 }
 
 /* ----- Nav Bar ---- */
-.thenav{
-	width: 100%;
-}
+
+
 nav ul{
 	display: table;
 	table-layout: fixed;
@@ -269,22 +268,25 @@ nav li {
 	display: table-cell;
 	vertical-align: middle;
 	background: rgb(70, 5, 131);
-	border: 2px solid #000;
+	
   }
 
   nav li:nth-last-child(n+6), 
 nav li:nth-last-child(n+6) ~ * {
   display: inline-block;
-  border: 0;
+ 
 }
 
 nav li:nth-last-child(n+6) a, 
 nav li:nth-last-child(n+6) ~ * a {
   display: inline-block;
-  border: 0;
+
 }
 
-
+ul li{
+	
+	overflow: hidden;
+}
 
   nav a {
 	text-decoration: none;
@@ -301,4 +303,15 @@ nav a:focus {
   } 
    nav a:hover{
 	color: #cbce1f;
+   }
+
+
+   #firstone{
+	border-top-left-radius:15px;
+	border-bottom-left-radius:15px;
+   }
+
+   #lastone{
+	border-top-right-radius:15px;
+	border-bottom-right-radius:15px;
    }

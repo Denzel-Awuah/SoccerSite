@@ -13,6 +13,7 @@ import { UpcomingFixturesComponent } from './upcoming-fixtures/upcoming-fixtures
 import { LeagueTableComponent } from './league-table/league-table.component';
 import { TeamsComponent } from './teams/teams.component';
 import { HomePageComponent } from './home-page/home-page.component';
+import { ProfilePageComponent } from './profile-page/profile-page.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { HomePageComponent } from './home-page/home-page.component';
     UpcomingFixturesComponent,
     LeagueTableComponent,
     TeamsComponent,
-    HomePageComponent
+    HomePageComponent,
+    ProfilePageComponent
   ],
   imports: [
     BrowserModule, FormsModule, HttpClientModule, appRoutingModule

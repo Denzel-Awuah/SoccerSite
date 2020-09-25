@@ -1,0 +1,33 @@
+.card {
+    box-shadow: 4px 8px 2px 3px rgba(0, 0, 0, 0.37);
+    max-width: 600px;
+    margin: auto;
+    font-family: arial;
+  }
+  
+.teamName{
+    margin-top: 7px;
+     text-align: center;
+}
+
+  .title {
+    color: grey;
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  
+  a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+  }
+  
+  table{
+      float: left;
+  }
+
+  tr:nth-child(even){
+      margin-bottom: 12px;
+      background-color: rgba(122, 218, 218, 0.418);
+  }
