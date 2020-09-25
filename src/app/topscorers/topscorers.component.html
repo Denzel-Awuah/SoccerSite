@@ -8,7 +8,7 @@
       </tr>
       <tr  *ngFor="let player of scorersdata;let i = index">
         <td>{{i+1}}</td>
-        <td class="scorers"> <a routerLink="/leaguetable" routerLinkActive="active">{{player.firstname}}&nbsp;{{player.lastname}}</a></td>
+        <td class="scorers">{{player.firstname}}&nbsp;{{player.lastname}}</td>
         <td>{{player.goals.total}}</td>
       </tr>
      

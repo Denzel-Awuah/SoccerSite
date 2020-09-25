@@ -1,16 +1,16 @@
-<h2 style="text-align:center">User Profile Card</h2>
 
-<div class="card">
-  <img src="./../../assets/prem1.jpg" alt="John" style="width:100%">
-  <h1 class="teamName">John Doe</h1>
-  <p class="title">City, Country</p>
+
+<div *ngFor="let theTeam of teamInfo" class="card">
+  <h2 style="text-align:center">Profile Card</h2>
+  <img src={{theTeam.logo}} alt="John" style="width:100%">
+  <h1 class="teamName">{{theTeam.name}}</h1>
+  <p class="title">{{theTeam.venue_city}},&nbsp; {{theTeam.country}}</p>
   <table>
-      <tr><td>Abbreviation:</td></tr>
-      <tr><td>Venue Name:</td></tr>
-      <tr><td>Surface:</td></tr>
-      <tr><td>Venue Address:</td></tr>
-      <tr><td>Venue City:</td></tr>
-      <tr><td>Capacity:</td></tr>
+      <tr><td>Abbreviation:&nbsp;{{theTeam.code}}</td></tr>
+      <tr><td>Venue Name:&nbsp;{{theTeam.venue_name}}</td></tr>
+      <tr><td>Surface:&nbsp;{{theTeam.venue_surface}}</td></tr>
+      <tr><td>Venue Address:&nbsp;{{theTeam.venue_address}}</td></tr>
+      <tr><td>Capacity:&nbsp;{{theTeam.venue_capacity}}</td></tr>
   </table>
   
 </div>

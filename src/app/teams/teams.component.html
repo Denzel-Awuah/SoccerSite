@@ -7,7 +7,7 @@
       </tr>
       <tr  *ngFor="let team of teamsData">
         <td> <img src={{team.logo}}></td>
-        <td><a routerLink="/leaguetable" routerLinkActive="active">{{team.name}}</a></td>
+        <td class="teamnames" (click)="onTeamSelection(team)">{{team.name}}</td>
       </tr>
      
     </table>

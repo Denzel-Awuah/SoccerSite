@@ -18,7 +18,7 @@ const routes: Routes = [
     { path: 'matches', component: PreviousFixturesComponent},
     { path: 'upcominggames', component: UpcomingFixturesComponent},
     { path: 'teams', component: TeamsComponent},
-    { path: 'profile', component: ProfilePageComponent},
+    { path: 'profile/:id', component: ProfilePageComponent},
     { path: '', component: HomePageComponent },
 
     // otherwise redirect to home

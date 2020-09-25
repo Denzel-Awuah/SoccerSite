@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from  '@angular/router';
 
 @Component({
   selector: 'app-previous-fixtures',
@@ -10,20 +11,28 @@ export class PreviousFixturesComponent implements OnInit {
 
   PreviousFixtures;
 
-  constructor() { }
+  constructor(private router : Router) { }
+
+  onTeamSelection(matchGame){
+    this.router.navigate(['/profile',matchGame.homeTeam.team_id]);
+  }
+
+  onTeamSelectionAway(matchGame){
+    this.router.navigate(['/profile',matchGame.awayTeam.team_id]);
+  }
 
   ngOnInit(): void {
 
-    //Get the Previous Fixtures from API
-    // fetch("https://api-football-v1.p.rapidapi.com/v2/fixtures/league/524/last/5", {
-    //   "method": "GET",
-    //   "headers": {
-    //     "x-rapidapi-host": "api-football-v1.p.rapidapi.com",
-    //     "x-rapidapi-key": "01217d9c47msha27496e5b78af28p1bca54jsnb9d860de87bc"
-    //   }
-    // })
     
-    fetch("./../../assets/datafixtures.json")
+    
+    //Get the Previous Fixtures from API
+    fetch("https://api-football-v1.p.rapidapi.com/v2/fixtures/league/524/last/5", {
+      "method": "GET",
+      "headers": {
+        "x-rapidapi-host": "api-football-v1.p.rapidapi.com",
+        "x-rapidapi-key": "01217d9c47msha27496e5b78af28p1bca54jsnb9d860de87bc"
+      }
+    })
     .then(response => response.json())
     .then(data => {
       this.PreviousFixtures = data.api.fixtures;

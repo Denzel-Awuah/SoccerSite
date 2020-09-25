@@ -25,6 +25,7 @@
   
   table{
       float: left;
+      
   }
 
   tr:nth-child(even){

@@ -13,6 +13,10 @@ export class LeagueTableComponent implements OnInit {
 
   constructor(private router: Router) {}
 
+  onTeamSelection(theteam){
+    this.router.navigate(['/profile',theteam.team_id]);
+  }
+
   ngOnInit(): void {
 
 

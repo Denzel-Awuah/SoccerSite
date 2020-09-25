@@ -6,7 +6,7 @@
           <div class="team-logo">
             <img src={{matchGame.homeTeam.logo}} />
           </div>
-          <h2 class="team-name">{{matchGame.homeTeam.team_name}}</h2>
+          <h2 (click)="onTeamSelection(matchGame)" class="team-name">{{matchGame.homeTeam.team_name}}</h2>
         </div>
       </div>
       <div class="column">
@@ -30,7 +30,7 @@
           <div class="team-logo">
             <img src={{matchGame.awayTeam.logo}} />
           </div>
-          <h2 class="team-name">{{matchGame.awayTeam.team_name}}</h2>
+          <h2 (click)="onTeamSelectionAway(matchGame)" class="team-name">{{matchGame.awayTeam.team_name}}</h2>
         </div>
       </div>
     </div>
