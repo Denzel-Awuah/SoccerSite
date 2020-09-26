@@ -1,4 +1,24 @@
 # SoccerSite
+- View stats from the English Premier League from the 2019-2020 season.
+
+<br/>
+<br/>
+<br/>
+
+
+# How To
+- Clone repo
+- Open CLI and run "npm install"
+- run "ng serve --o"
+
+
+<br/>
+<br/>
+
+## Home Page
+ -
+
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.1.
 
