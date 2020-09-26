@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import {config} from '../../../config.js';
 
 @Component({
   selector: 'app-league-table',
@@ -21,13 +22,7 @@ export class LeagueTableComponent implements OnInit {
 
 
     //Get the League Table Data from API
-      fetch("https://api-football-v1.p.rapidapi.com/v2/leagueTable/524", {
-	"method": "GET",
-	"headers": {
-		"x-rapidapi-host": "api-football-v1.p.rapidapi.com",
-		"x-rapidapi-key": "01217d9c47msha27496e5b78af28p1bca54jsnb9d860de87bc"
-	}
-    })
+      fetch("https://api-football-v1.p.rapidapi.com/v2/leagueTable/524", config)
     .then(response => response.json())
     .then(data => {
       console.log(data);

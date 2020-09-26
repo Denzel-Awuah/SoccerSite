@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import {config} from '../../../config.js';
 
 @Component({
   selector: 'app-topscorers',
@@ -21,13 +22,7 @@ export class TopscorersComponent implements OnInit {
       
 
     //USE THIS
-  fetch("https://api-football-v1.p.rapidapi.com/v2/topscorers/524", {
-	"method": "GET",
-	"headers": {
-		"x-rapidapi-host": "api-football-v1.p.rapidapi.com",
-		"x-rapidapi-key": "01217d9c47msha27496e5b78af28p1bca54jsnb9d860de87bc"
-	}
-})
+  fetch("https://api-football-v1.p.rapidapi.com/v2/topscorers/524", config)
 .then(response => response.json())
 .then(data => {
   this.scorersdata = data.api.topscorers;

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from  '@angular/router';
+import {config} from '../../../config.js';
 
 @Component({
   selector: 'app-teams',
@@ -24,14 +25,8 @@ export class TeamsComponent implements OnInit {
 
 
     //Getting Teams Data from the API 
-    fetch("https://api-football-v1.p.rapidapi.com/v2/teams/league/524", {
-	"method": "GET",
-	"headers": {
-		"x-rapidapi-host": "api-football-v1.p.rapidapi.com",
-		"x-rapidapi-key": "01217d9c47msha27496e5b78af28p1bca54jsnb9d860de87bc"
-	}
-})
-.then(response => response.json())
+    fetch("https://api-football-v1.p.rapidapi.com/v2/teams/league/524",config)
+    .then(response => response.json())
     .then(data => {
       console.log(data);
       this.teamsData = data.api.teams;
