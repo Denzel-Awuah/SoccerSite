@@ -162,14 +162,15 @@ img {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	width: 100%;
 }
 
 .match-date, .match-referee {
-    display: flex;
-    font-size: 10px;
-    width: 120px;
+    display: block;
+    font-size: 19px;
+    width: 170px;
 	color: var(--color-text-secondary);
-	
+	text-align: center;
 }
 
     
@@ -199,7 +200,9 @@ img {
 
 .match-referee {
     margin-top: 12px;
-    margin-bottom: 30px;
+	margin-bottom: 30px;
+	width: 250px;
+	text-align: center;
 }
 
 .headings{
