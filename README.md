@@ -11,11 +11,6 @@
 <br/>
 <br/>
 
-## Home Page
- ![Application](/src/assets/home.png)
-
-<br/> 
-<br/> 
 
 ## Previous Fixtures Component
 ![Application](/src/assets/previous.png)
